@@ -1,5 +1,7 @@
 package ictgradschool.industry.oop.sortingnumbers;
 
+import ictgradschool.Keyboard;
+
 /**
  * Write a program that prompts the user to enter a range – 2 integers representing a lower bound and an upper bound.
  * You should use Keyboard.readInput() for this. Then, convert these bounds from String to int using Integer.parseInt().
@@ -12,14 +14,21 @@ public class SortingNumbers {
      * TODO Your code here. You may also write additional methods if you like.
      */
     private void start() {
-        int rangeMin = 25;
-        int rangeMax = 30;
-        int getRandomNumber1 = (int)Math.floor(Math.random()*(rangeMax-rangeMin+1)+rangeMin);
-        int getRandomNumber2 = (int)Math.floor(Math.random()*(rangeMax-rangeMin+1)+rangeMin);
-        int randomMin = Math.min(getRandomNumber1, getRandomNumber2);
-        int randomMax = Math.max(getRandomNumber1, getRandomNumber2);
-        System.out.println("Your lucky numbers are " + randomMax + " and " + randomMin);
+        System.out.print("Lower bound? ");
+        int lower = Integer.parseInt(Keyboard.readInput());
+        System.out.print("Upper bound? ");
+        int upper = Integer.parseInt(Keyboard.readInput());
+
+        int randomNum1 = (int)Math.floor(Math.random()*(upper-lower+1)+lower);
+        int randomNum2 = (int)Math.floor(Math.random()*(upper-lower+1)+lower);
+        int randomNum3 = (int)Math.floor(Math.random()*(upper-lower+1)+lower);
+
+        System.out.println("Your 3 randomly generated numbers are " + randomNum1 + ", " + randomNum2 + " and " +  randomNum3 + ".");
+
+        int smallestNum = Math.min(Math.min(randomNum1, randomNum2), randomNum3);
+        System.out.println("The smallest number is " + smallestNum + ".");
     }
+
     /**
      * Program entry point. Do not edit.
      */
