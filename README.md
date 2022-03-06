@@ -10,7 +10,9 @@ Exercise three: Strings and using String methods
 
 Exercise four: Debugging a simple program
 
-Exercise five: Determine lowest weight
+(Exercises 1-4 are on paper)
+
+Exercise five: Determine the lowest weight
 
 Exercise six: Generating and sorting 2 random numbers between 25 and 30
 
