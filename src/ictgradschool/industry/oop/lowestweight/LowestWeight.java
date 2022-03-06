@@ -22,7 +22,7 @@ public class LowestWeight {
 
         double lowestWeight = Math.min(firstWeightDouble, secondWeightDouble);
         System.out.println("The lowest weight is " + lowestWeight + "kg.");
-    }
+        }
 
     /**
      * Program entry point. Do not edit.
