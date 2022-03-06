@@ -1,5 +1,7 @@
 package ictgradschool.industry.oop.removechar;
 
+import ictgradschool.Keyboard;
+
 /**
  * Write a program that prompts the user to enter a sentence, then prints out the sentence with a random character
  * missing. The program is to be written so that each task is in a separate method. See the comments below for the
@@ -27,7 +29,8 @@ public class RemoveCharacter {
     private String getSentenceFromUser() {
 
         // TODO Prompt the user to enter a sentence, then get their input.
-        return null;
+        System.out.print("Enter a sentence: ");
+        return Keyboard.readInput();
     }
 
     /**
@@ -36,7 +39,7 @@ public class RemoveCharacter {
     private int getRandomPosition(String sentence) {
 
         // TODO Use a combination of Math.random() and sentence.length() to get the desired result.
-        return -1;
+        return (int) (Math.random() * sentence.length());
     }
 
     /**
@@ -45,7 +48,8 @@ public class RemoveCharacter {
     private void printCharacterToBeRemoved(String sentence, int position) {
 
         // TODO Implement this method
-
+        char removedChar = sentence.charAt(position);
+        System.out.println("Removing \"" + removedChar + "\" from position " + position);
     }
 
     /**
@@ -54,16 +58,16 @@ public class RemoveCharacter {
     private String removeCharacter(String sentence, int position) {
 
         // TODO Implement this method
-        return null;
-
+        return sentence.substring(0, position) + sentence.substring(position + 1);
     }
 
     /**
-     * Prints a message which shows the new sentence after the removal has occured.
+     * Prints a message which shows the new sentence after the removal has occurred.
      */
     private void printNewSentence(String changedSentence) {
 
         // TODO Implement this method
+        System.out.println("The new sentence is: " + changedSentence);
     }
 
     public static void main(String[] args) {

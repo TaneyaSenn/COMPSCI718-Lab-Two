@@ -18,6 +18,8 @@ Exercise six: Generating and sorting 2 random numbers between 25 and 30
 
 Exercise seven: Generating and sorting 3 random numbers
 
+Exercise eight: Removing a character from a sentence
+
 Exercise nine: Truncating an amount to n decimal places
 
 Exercise ten: Noughts and crosses
