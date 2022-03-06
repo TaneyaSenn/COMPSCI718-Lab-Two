@@ -12,17 +12,17 @@ public class LowestWeight {
      * TODO Your code here. You may also write additional methods if you like.
      */
     private void start() {
-    System.out.print("What is the first person's weight (kg)?");
-    double firstWeightDouble = Double.parseDouble(Keyboard.readInput());
-    System.out.println("The first person's weight is " + firstWeightDouble + "kg.");
+        System.out.print("What is the first person's weight (kg)?");
+        double firstWeightDouble = Double.parseDouble(Keyboard.readInput());
+        System.out.println("The first person's weight is " + firstWeightDouble + "kg.");
 
-    System.out.print("What is the second person's weight (kg)?");
-    double secondWeightDouble = Double.parseDouble(Keyboard.readInput());
-    System.out.println("The second person's weight is " + secondWeightDouble + "kg.");
+        System.out.print("What is the second person's weight (kg)?");
+        double secondWeightDouble = Double.parseDouble(Keyboard.readInput());
+        System.out.println("The second person's weight is " + secondWeightDouble + "kg.");
 
-    double lowestWeight = Math.min(firstWeightDouble, secondWeightDouble);
-    System.out.println("The lowest weight is " + lowestWeight + "kg.");
-    }
+        double lowestWeight = Math.min(firstWeightDouble, secondWeightDouble);
+        System.out.println("The lowest weight is " + lowestWeight + "kg.");
+        }
 
     /**
      * Program entry point. Do not edit.
