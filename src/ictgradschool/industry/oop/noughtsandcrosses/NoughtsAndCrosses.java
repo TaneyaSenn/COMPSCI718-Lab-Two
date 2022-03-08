@@ -29,30 +29,33 @@ public class NoughtsAndCrosses {
      * TODO Implement this
      */
     public String getRow(String letters, int row) {
-
-        return null;
+        int length = 6;
+        int start = (row-1) * length ;
+        int end = row * length;
+        return letters.substring(start, end);
     }
 
     /**
      * TODO Implement this
      */
     public void printRows(String row1, String row2, String row3) {
-
+        System.out.println(row1);
+        System.out.println(row2);
+        System.out.println(row3);
     }
 
     /**
      * TODO Implement this
      */
     public String getLeftDiagonal(String row1, String row2, String row3) {
-
-        return null;
+        return row1.charAt(0) + " " + row2.charAt(2) + " " + row3.charAt(4);
     }
 
     /**
      * TODO Implement this
      */
     public void printDiagonal(String leftDiagonal) {
-
+        System.out.print("Diagonal: " + leftDiagonal);
     }
 
     /**
